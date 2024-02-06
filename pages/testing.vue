@@ -1,3 +1,4 @@
 <template>
     <HeroAlt />
+    <StickyContent />
 </template>

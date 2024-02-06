@@ -17,10 +17,10 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Calibrations</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+        <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Get quote <span aria-hidden="true">&rarr;</span></a>
