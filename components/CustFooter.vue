@@ -4,7 +4,7 @@
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="space-y-8">
-        <img class="h-14" src="/logo.png" alt="Company name">
+        <img class="h-20 bg-gray-600 rounded-md p-2" src="/logo.png" alt="Company name">
         <p class="text-sm leading-6 text-gray-300">Making the world a better place through constructing elegant hierarchies.</p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-500 hover:text-gray-400">

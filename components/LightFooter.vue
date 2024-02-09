@@ -4,7 +4,7 @@
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="space-y-8">
-        <img class="h-7" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Company name">
+        <img class="h-7" src="/logo.png" alt="Sunstate AutoGlass">
         <p class="text-sm leading-6 text-gray-600">Making the world a better place through constructing elegant hierarchies.</p>
         <div class="flex space-x-6">
           <a href="#" class="text-gray-400 hover:text-gray-500">
