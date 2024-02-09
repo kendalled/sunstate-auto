@@ -8,5 +8,6 @@
 		<OverlapStats />
 		<Stats />
     <StickyContent />
+		<StickyContent1 />
   </div>  
 </template>

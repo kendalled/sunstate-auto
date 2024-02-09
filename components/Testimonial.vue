@@ -6,7 +6,7 @@
         <div class="lg:max-w-lg">
           <h2 class="text-base font-semibold leading-7 text-red-600">Same-day service</h2>
           <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mobile service you can trust.</p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Our team of experts are here to provide you with the windshield repairs and replacements you need. With our fast and reliable mobile service, getting back on the road couldn't be easier.</p>
           <div class="mt-8">
             <a href="#" class="inline-flex rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Get started</a>
           </div>
