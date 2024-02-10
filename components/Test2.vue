@@ -14,7 +14,7 @@
             <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
           </svg>
           <blockquote class="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-            <p>The service was quick and professional, with easy scheduling. Overall, a great experience—I highly recommend them for anyone needing a windshield replacement.</p>
+            <p>Their service was quick and professional, with easy scheduling. Overall, a great experience—I highly recommend them for anyone needing a windshield replacement.</p>
           </blockquote>
           <figcaption class="mt-8 text-base">
             <div class="font-semibold text-white">Judith Black</div>
