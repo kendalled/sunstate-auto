@@ -1,9 +1,8 @@
 <template>
-  <main>
-		<Navigation />
-    <PictureHero />
-		<TimelineFeat />
-    <Testimonial />
-    <CustFooter />
+	<main>
+			<Hero />
+			<Test2 />
+			<Testimonial />
+			<CustFooter />
 	</main>
 </template>

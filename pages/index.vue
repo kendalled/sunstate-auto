@@ -1,8 +1,10 @@
 <template>
-    <main>
-        <Hero />
-        <Test2 />
-        <Testimonial />
-        <CustFooter />
-    </main>
+  <main>
+		<Navigation />
+    <PictureHero />
+		<TimelineFeat />
+    <Testimonial />
+		<Test2 />
+    <LightFooter />
+	</main>
 </template>
