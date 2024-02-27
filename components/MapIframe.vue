@@ -1,0 +1,13 @@
+<template>
+  <div>
+    <iframe
+      width="600"
+      height="450"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJHSY5BnZv54gRwE4pSy6o73s&key=">
+    </iframe>
+  </div>
+</template>

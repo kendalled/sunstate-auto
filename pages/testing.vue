@@ -1,13 +1,22 @@
 <template>
   <div class="bg-gray-100">
-    <QuoteForm />
+		<!-- <Florida /> -->
     <!-- <HeroAlt v-if="false" /> -->
+		<!-- <SelectionTabs /> -->
+    <!-- <TabSections /> -->
 		<FadingStats />
 		<HeaderSection />
 		<NewStats />
-		<OverlapStats />
-		<Stats />
-    <StickyContent />
-		<StickyContent1 />
+		<DiffIncentives />
+		<!-- ecom -->
+		<Incentives />
+		<AltSections />
+		<PageHeader />
+		<SplitImage />
+		<!-- todo: use on about -->
+		<StackedQuote />
+		<Test2 />
+		<Florida />
+		<MapIframe />
   </div>  
 </template>
