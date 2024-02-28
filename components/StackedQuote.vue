@@ -1,5 +1,5 @@
 <template>
-<form class="bg-white max-w-5xl mx-auto shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl px-4 py-6 sm:p-8">
+<form class="bg-white max-w-xl mx-auto shadow-sm ring-1 ring-gray-900/5 sm:shadow-lg sm:rounded-xl px-4 py-6 sm:p-8">
   <div class="space-y-12">
     <div class="border-b border-gray-900/10 pb-12">
       <h2 class="text-base font-semibold leading-7 text-gray-900">Customer Information</h2>
@@ -24,30 +24,6 @@
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
           <div class="mt-2">
             <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
-          </div>
-        </div>
-
-        <!-- <div class="sm:col-span-3">
-          <label for="country" class="block text-sm font-medium leading-6 text-gray-900">Country</label>
-          <div class="mt-2">
-            <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:max-w-xs sm:text-sm sm:leading-6">
-              <option>United States</option>
-              <option>Canada</option>
-              <option>Mexico</option>
-            </select>
-          </div>
-        </div> -->
-
-        <div class="col-span-full">
-          <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Address Line 1</label>
-          <div class="mt-2">
-            <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
-          </div>
-        </div>
-        <div class="col-span-full">
-          <label for="street-address-2" class="block text-sm font-medium leading-6 text-gray-900">Address Line 2</label>
-          <div class="mt-2">
-            <input type="text" name="street-address-2" id="street-address-2" autocomplete="street-address-2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
           </div>
         </div>
 
@@ -179,43 +155,11 @@
       </div>
     </div> -->
 
-    <div class="border-b border-gray-900/10 pb-12">
+    <!-- <div class="border-b border-gray-900/10 pb-12">
       <h2 class="text-base font-semibold leading-7 text-gray-900">Notifications</h2>
       <p class="mt-1 text-sm leading-6 text-gray-600">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
 
       <div class="mt-10 space-y-10">
-        <fieldset>
-          <legend class="text-sm font-semibold leading-6 text-gray-900">By Email</legend>
-          <div class="mt-6 space-y-6">
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-600">
-              </div>
-              <div class="text-sm leading-6">
-                <label for="comments" class="font-medium text-gray-900">Comments</label>
-                <p class="text-gray-500">Get notified when someones posts a comment on a posting.</p>
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input id="candidates" name="candidates" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-600">
-              </div>
-              <div class="text-sm leading-6">
-                <label for="candidates" class="font-medium text-gray-900">Candidates</label>
-                <p class="text-gray-500">Get notified when a candidate applies for a job.</p>
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input id="offers" name="offers" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-600">
-              </div>
-              <div class="text-sm leading-6">
-                <label for="offers" class="font-medium text-gray-900">Offers</label>
-                <p class="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
-              </div>
-            </div>
-          </div>
-        </fieldset>
         <fieldset>
           <legend class="text-sm font-semibold leading-6 text-gray-900">Push Notifications</legend>
           <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p>
@@ -235,7 +179,7 @@
           </div>
         </fieldset>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="mt-6 flex items-center justify-end gap-x-6">

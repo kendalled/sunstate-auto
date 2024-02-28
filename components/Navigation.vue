@@ -86,7 +86,7 @@ export default {
 				{
 					text: 'Calibrations',
 					href: '/calibrations',
-					title: 'Winshield calibrations page'
+					title: 'Windshield calibrations page'
 				},
 				{
 					text: 'About Us',

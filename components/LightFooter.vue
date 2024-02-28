@@ -89,13 +89,13 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claim</a>
+                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claims</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</a>
+                <nuxt-link to="/privacy" title="Privacy Policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</nuxt-link>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</a>
+                <nuxt-link to="/tos" title="Terms of Service" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Terms</nuxt-link>
               </li>
             </ul>
           </div>

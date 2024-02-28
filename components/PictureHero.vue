@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-900">
       <!-- todo: do smarter -mt-7 og spacing -->
-    <div class="relative isolate overflow-hidden -mt-10">
+    <div class="relative isolate overflow-hidden -mt-12">
       <!-- &auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply -->
       <img src="/cracked.png" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
       <div class="absolute inset-0 -z-10 h-full w-full object-cover bg-gray-900 opacity-80 mix-blend-multiply" />

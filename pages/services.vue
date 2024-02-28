@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PictureHeader heading="Our Services" copy="Where precision meets vision. From flawlessly executed windshield replacements to chip and crack repairs, seamless side window replacements, and tailored solutions for commercial vehicles, we redefine clarity on the road." />
+    <PictureHeader heading="Our Services" copy="Where precision meets vision. From flawlessly executed windshield replacements to chip and crack repairs, seamless side window replacements, and tailored solutions for commercial vehicles, we redefine clarity on the road." image="/smashed.png" />
     <ImageRight :flavor="block1.flavor" :heading="block1.heading" :subheading="block1.subheading" :image="block1.image" :points="block1.points" />
     <DoubleTest />
     <ImageLeft :flavor="block2.flavor" :heading="block2.heading" :subheading="block2.subheading" :image="block2.image" :points="block2.points" />

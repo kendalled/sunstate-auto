@@ -1,22 +1,17 @@
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-100 pb-32">
 		<!-- <Florida /> -->
     <!-- <HeroAlt v-if="false" /> -->
 		<!-- <SelectionTabs /> -->
     <!-- <TabSections /> -->
+		<Incentives />
 		<FadingStats />
+		<SplitImage />
 		<HeaderSection />
 		<NewStats />
-		<DiffIncentives />
-		<!-- ecom -->
-		<Incentives />
-		<AltSections />
-		<PageHeader />
-		<SplitImage />
 		<!-- todo: use on about -->
 		<StackedQuote />
-		<Test2 />
-		<Florida />
-		<MapIframe />
+		<!-- <Florida />
+		<MapIframe /> -->
   </div>  
 </template>
