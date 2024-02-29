@@ -47,7 +47,7 @@ export default {
           date: 'Feb 16, 2024'
         },
         {
-          title: 'Can hail damage your windshield? A 5 minute gide to weather damage',
+          title: 'Can hail damage your windshield? A 5 minute guide to weather damage',
           image: '/cracked.png',
           date: 'Jan 3, 2024'
         },

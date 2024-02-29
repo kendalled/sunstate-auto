@@ -73,6 +73,11 @@ export default {
       }
     }
   },
+  watch: {
+    $route(to, from) {
+      this.mobileOpen = false
+    },
+  },
   data () {
     return {
 			flyoutOpen: false,
