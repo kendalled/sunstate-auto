@@ -213,28 +213,29 @@
     <form class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
       <div class="px-4 py-6 sm:p-8">
         <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-          <div class="sm:col-span-2">
+          <div class="col-span-3 sm:col-span-2">
+            <!-- todo: figure out why spacing not consistent -->
             <label for="year" class="block text-sm font-medium leading-6 text-gray-900">Year</label>
             <div class="mt-2">
               <input type="text" name="year" id="year" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="sm:col-span-2">
+          <div class="col-span-3 sm:col-span-2">
             <label for="make" class="block text-sm font-medium leading-6 text-gray-900">Make</label>
             <div class="mt-2">
               <input type="text" name="make" id="make" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="sm:col-span-2">
+          <div class="col-span-3 sm:col-span-2">
             <label for="model" class="block text-sm font-medium leading-6 text-gray-900">Model</label>
             <div class="mt-2">
               <input type="text" name="model" id="model" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="col-span-full">
+          <div class="col-span-3 sm:col-span-full">
             <label for="vin" class="block text-sm font-medium leading-6 text-gray-900">VIN (Vehicle Identification Number)</label>
             <div class="mt-2">
               <input type="text" name="vin" id="vin" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
@@ -307,36 +308,36 @@
     <form class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
       <div class="px-4 py-6 sm:p-8">
         <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-          <MySelect class="col-span-full" title="Sunstate Representative" :options="employeeList" />
+          <MySelect class="col-span-3 sm:col-span-full" title="Sunstate Representative" :options="employeeList" />
 
-          <div class="sm:col-span-3">
+          <div class="col-span-3">
             <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent Email Address</label>
             <div class="mt-2">
               <input id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="sm:col-span-3">
+          <div class="col-span-3">
             <label for="insurance-agency" class="block text-sm font-medium leading-6 text-gray-900">Insurance Agency Name</label>
             <div class="mt-2">
               <input id="insurance-agency" name="insurance-agency" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="sm:col-span-2">
+          <div class="col-span-3 sm:col-span-2">
             <label for="phone-number" class="block text-sm font-medium leading-6 text-gray-900">Phone Number</label>
             <div class="mt-2">
               <input id="phone-number" name="phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
 
-          <div class="sm:col-span-2">
+          <div class="col-span-3 sm:col-span-2">
             <label for="referred-by" class="block text-sm font-medium leading-6 text-gray-900">Referred By</label>
             <div class="mt-2">
               <input id="referred-by" name="referred-by" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
-          <div class="col-span-2">
+          <div class="col-span-3 sm:col-span-2">
           <legend class="text-sm font-medium text-gray-900">Spanish Speaking Customer</legend>
           <fieldset class="mt-3.5">
             <legend class="sr-only">Spanish Speaking Customer</legend>
@@ -353,7 +354,7 @@
           </fieldset>
         </div>
 
-          <div class="col-span-full">
+          <div class="col-span-3 sm:col-span-full">
             <label for="Comments" class="block text-sm font-medium leading-6 text-gray-900">Comments</label>
             <div class="mt-2">
               <textarea id="Comments" name="Comments" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"></textarea>
@@ -361,7 +362,7 @@
             <p class="mt-3 text-sm leading-6 text-gray-600">Note any additional comments here.</p>
           </div>
 
-        <div class="col-span-full">
+        <div class="col-span-3 sm:col-span-full">
           <legend class="text-sm font-medium text-gray-900">Confirmation Email?</legend>
           <fieldset class="mt-2">
             <legend class="sr-only">Confirmation Email</legend>
@@ -383,7 +384,7 @@
       </div>
       <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
         <button type="button" class="text-sm font-semibold leading-6 text-gray-900">Cancel</button>
-        <button type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Save</button>
+        <button type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit</button>
       </div>
     </form>
   </div>
