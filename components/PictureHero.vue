@@ -18,7 +18,7 @@
           <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">Windshield repairs have never been easier.</h1>
           <p class="mt-6 text-lg leading-8 text-gray-300">Experience seamless windshield repairs with Sunstate Autoglass – swift, same-day service, ensuring your vehicle's glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400">Get started</a>
+            <nuxt-link to="/agent" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400">Get started</nuxt-link>
             <nuxt-link to="/services" title="Overview of services" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></nuxt-link>
           </div>
         </div>
