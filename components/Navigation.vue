@@ -5,7 +5,7 @@
       <nuxt-link to="/" title="Home Page" class="-m-1.5 p-1.5">
         <span class="sr-only">Sunstate AutoGlass</span>
 				<!-- todo: space? -->
-        <img class="h-10 sm:h-[3.25rem] absolute top-[1.15rem] sm:top-4 w-auto" src="/logo.png" alt="">
+        <img class="h-10 sm:h-14 absolute top-[1.15rem] sm:top-4 w-auto" src="/logo.png" alt="">
       </nuxt-link>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
