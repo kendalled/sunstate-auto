@@ -4,19 +4,21 @@
     <div class="flex lg:flex-1">
       <nuxt-link to="/" title="Home Page" class="-m-1.5 p-1.5">
         <span class="sr-only">Sunstate AutoGlass</span>
-				<!-- todo: space? -->
-        <img class="h-10 sm:h-14 absolute top-[1.15rem] sm:top-4 w-auto" src="/logo.png" alt="">
+				<!-- todo: space? Size ? -->
+        <img class="h-10 sm:h-[3.75rem] absolute top-[1.15rem] sm:top-3.5 w-auto" src="/logo.png" alt="">
       </nuxt-link>
     </div>
     <div class="hidden lg:flex lg:gap-x-12">
 			<nuxt-link v-for="link in links" :to="link.href" :title="link.title" class="text-sm font-semibold leading-6 text-gray-800 hover:text-gray-900">{{link.text}}</nuxt-link>
     </div>
     <div class="flex flex-1 items-center justify-end gap-x-6">
-				<div class="hidden xl:flex">
-					<button aria-label="Hide phone number" class="flex-shrink-0 p-1 bg-red-500 text-red-50 border-2 border-transparent rounded-full hover:text-red-200 focus:outline-none focus:text-gray-500 focus:bg-gray-100">
-						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-label="Closes phone number" viewBox="0 0 24 24" class="w-6 h-6"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+				<div class="hidden lg:flex">
+          <!-- todo: fix alignment issues -->
+          <nuxt-link to="/agent" title="Agent Form" v-if="true" type="button" class="rounded-md bg-red-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Agent Form</nuxt-link>
+					<button aria-label="Hide phone number" class="hidden xl:block ml-6 flex-shrink-0 h-9 w-9 bg-gray-200 text-gray-600 border-2 border-transparent rounded-full hover:text-red-200 focus:outline-none focus:text-gray-500 focus:bg-gray-100">
+						<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-label="Closes phone number" viewBox="0 0 24 24" class="mx-auto w-6 h-6"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
 					</button>
-					<div class="ml-2 text-base text-gray-700 font-semibold">
+					<div class="text-base text-gray-700 font-semibold hidden xl:block">
 						<a title="Sunstate AutoGlass Phone Number" href="tel:+14072652855" class="inline-block text-base leading-9 transition-colors duration-200 hover:text-gray-600 ml-2"> +1 (407) 265-2855 </a>
 					</div>
 				</div>
@@ -94,13 +96,13 @@ export default {
 					title: 'Windshield calibrations page'
 				},
 				{
-					text: 'About Us',
+					text: 'About us',
 					href: '/about',
 					title: 'About our company'
 				},
 				{
-					text: 'Agent Form',
-					href: '/agent',
+					text: 'Contact',
+					href: '/contact',
 					title: 'Contact details'
 				}
 			]

@@ -14,8 +14,8 @@
   <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.red.100),white)] opacity-20"></div>
   <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-red-600/10 ring-1 ring-red-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
   <div class="mx-auto max-w-xl lg:max-w-4xl">
-    <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your project</h2>
-    <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals build out their brand guidelines.</p>
+    <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your windshield.</h2>
+    <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road.</p>
     <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
       <form action="#" method="POST" class="lg:flex-auto">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -32,13 +32,13 @@
             </div>
           </div>
           <div>
-            <label for="budget" class="block text-sm font-semibold leading-6 text-gray-900">Budget</label>
+            <label for="budget" class="block text-sm font-semibold leading-6 text-gray-900">Insurance provider</label>
             <div class="mt-2.5">
               <input id="budget" name="budget" type="text" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
           <div>
-            <label for="website" class="block text-sm font-semibold leading-6 text-gray-900">Website</label>
+            <label for="website" class="block text-sm font-semibold leading-6 text-gray-900">Vehicle model</label>
             <div class="mt-2.5">
               <input type="url" name="website" id="website" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
