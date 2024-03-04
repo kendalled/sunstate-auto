@@ -26,8 +26,8 @@
         <div id="features-panel-1" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-1" role="tabpanel" tabindex="0">
           <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
             <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Adaptive and modular</h3>
-              <p class="mt-2 text-base text-gray-500">The Organize base set allows you to configure and evolve your setup as your items and habits change. The included trays and optional add-ons are easily rearranged to achieve that perfect setup.</p>
+              <h3 class="text-lg font-medium text-gray-900">Importance of Calibration</h3>
+              <p class="mt-2 text-base text-gray-500">Windshield Calibration is the most important step in the windshield replacement process. Without proper calibration, your Adas or Advanced Driver Assistance Systems would malfunction and cause issues for your car’s essential sensory functions. The Adas in your car are small “cameras” used for functions that keep you safe on the road such as lane assistance, automatic breaking, blind spot indicators, and more of your car's quality of life features. Knowing how important these functions are to your safety, our team is fluent and certified in Adas calibration. And with our on-site calibration facility, you get nothing short of the best quality calibrations.</p>
             </div>
             <div class="lg:col-span-7">
               <div class="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5">
@@ -39,8 +39,8 @@
         <div id="features-panel-2" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-2" role="tabpanel" tabindex="0">
           <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
             <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Natural wood options</h3>
-              <p class="mt-2 text-base text-gray-500">Organize has options for rich walnut and bright maple base materials. Accent your desk with a contrasting material, or match similar woods for a calm and cohesive look. Every base is hand sanded and finished.</p>
+              <h3 class="text-lg font-medium text-gray-900">Dynamic Calibration</h3>
+              <p class="mt-2 text-base text-gray-500">One process we use to ensure your calibration is set up properly is dynamic calibration. After replacing the windshield, we need to recalibrate your sensors. Following that process, we want to make sure your car’s safety systems are working correctly. Our technicians will perform a test drive to make sure your car is in proper working condition. If we find any issues, we can easily go back and recalibrate it to ensure your safety on the road.</p>
             </div>
             <div class="lg:col-span-7">
               <div class="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5">
@@ -52,8 +52,8 @@
         <div id="features-panel-3" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-3" role="tabpanel" tabindex="0">
           <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
             <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Helpful around the home</h3>
-              <p class="mt-2 text-base text-gray-500">Our customers use Organize throughout the house to bring efficiency to many daily routines. Enjoy Organize in your workspace, kitchen, living room, entry way, garage, and more. We can&#039;t wait to see how you&#039;ll use it!</p>
+              <h3 class="text-lg font-medium text-gray-900">Static recalibration</h3>
+              <p class="mt-2 text-base text-gray-500">This is a stationary process performed in our facility to recalibrate your car’s safety systems after a windshield replacement. Your vehicle is positioned and aligned with specialized tools to ensure that we are getting the most precise calibrations possible. Static calibration is mainly used for your car's radar and cameras on your windshield. While this process sounds simple, it can be quite complex so make sure you are entrusting certified experts to perform this maintenance.</p>
             </div>
             <div class="lg:col-span-7">
               <div class="aspect-h-1 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:aspect-h-2 sm:aspect-w-5">
