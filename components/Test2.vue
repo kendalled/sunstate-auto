@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32 -mt-32">
+    <div class="bg-white pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32 -mt-12 -mb-12">
   <div class="bg-gray-900 pb-20 sm:pb-24 xl:pb-0 relative z-50">
     <div class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
       <div class="-mt-8 w-full max-w-2xl xl:-mb-8 xl:w-96 xl:flex-none">
