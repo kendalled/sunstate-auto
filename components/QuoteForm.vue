@@ -1,7 +1,5 @@
 <template>
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
-  
-  <client-only>
   <form name="Online Submission" netlify ref="quoteForm">
     <input type="hidden" name="form-name" value="Online Submission" /> 
     <!-- start customer info -->
@@ -388,7 +386,6 @@
       </section>
     </div>
   </form>
-  </client-only>
     <!-- end agent/dealer info -->
 </div>
 </template>
