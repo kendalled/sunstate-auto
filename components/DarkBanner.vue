@@ -1,15 +1,15 @@
 <template>
   <div v-if="shown" class="flex items-center gap-x-6 bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
   <p class="text-sm leading-6 text-white">
-    <a href="#">
+    <a href="tel:+18884671788" title="Toll Free Number">
       <strong class="font-semibold">Toll Free: </strong>(888) 467-1788&nbsp;
     </a>
     <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current -mt-0.5" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
-    <a href="#">
+    <a href="tel:+14072652855" title="Orlando Number">
       <strong class="font-semibold">Orlando: </strong>(407) 265-2855&nbsp;
     </a>
     <svg viewBox="0 0 2 2" class="mx-2 inline h-0.5 w-0.5 fill-current -mt-0.5" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>
-    <a href="#">
+    <a href="tel:+18134252092" title="Tampa Number">
       <strong class="font-semibold">Tampa: </strong>(813) 425-2092&nbsp;
     </a>
   </p>
