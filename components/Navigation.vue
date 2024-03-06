@@ -43,7 +43,7 @@
           <span class="sr-only">Sunstate AutoGlass</span>
           <img class="h-10 w-auto" src="/logo.png" alt="">
         </a>
-        <a href="#" class="ml-auto rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Sign up</a>
+        <nuxt-link to="/agent" title="Agent form" class="ml-auto rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Agent Form</nuxt-link>
         <button type="button" @click="mobileOpen = false" class="-m-2.5 rounded-md p-2.5 text-gray-700">
           <span class="sr-only">Close menu</span>
           <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
