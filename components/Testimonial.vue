@@ -9,6 +9,8 @@
           <p class="mt-6 text-lg leading-8 text-gray-600">{{ copy }}</p>
           <div class="mt-8">
             <nuxt-link to="/agent" title="Agent Form" class="inline-flex rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Get started</nuxt-link>
+            <!-- todo: styling fix? arrows? -->
+            <nuxt-link to="/services" title="Our services" class="text-sm ml-6 font-semibold leading-6 text-gray-800 hover:text-gray-700">Learn more <span aria-hidden="true">→</span></nuxt-link>
           </div>
           <figure class="mt-16 border-l border-gray-200 pl-8 text-gray-600">
             <blockquote class="text-base leading-7">
