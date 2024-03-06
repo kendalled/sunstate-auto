@@ -1,6 +1,6 @@
 <template>
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
-  <form name="Online Submission" netlify ref="quoteForm">
+  <form name="Online Submission" netlify ref="quoteForm" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="form-name" value="Online Submission" /> 
     <!-- start customer info -->
     <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
