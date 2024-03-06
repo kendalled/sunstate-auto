@@ -86,16 +86,16 @@
           imgAlt: 'Honda windshield getting repaired',
           points: [
               {
-                title: 'Precision Restoration',
-                subtext: 'Our skilled technicians employ advanced techniques to ensure precise and seamless repairs, leaving your windshield looking as good as new.'
+                title: 'Superior Repairs',
+                subtext: 'Our team of experts are here to provide your auto glass with a top-quality treatment, leaving your windshield looking as good as new.'
               },
               {
-                title: 'Quick Turnarounds',
-                subtext: 'Experience efficient service with our streamlined process, guaranteeing a quick turnaround for chip and crack repairs, minimizing downtime.'
+                title: 'Quick Service',
+                subtext: 'Your time is valuable to us here at SunState. Our goal is to give you quality service and get you back on the road as soon as possible!'
               },
               {
-                title: 'Crystal-Clear Results',
-                subtext: 'Our state-of-the-art repair methods not only address the visible damage but also enhance visibility, providing you with a crystal-clear windshield for a safer driving experience.'
+                title: 'Streamlined Customer Experience',
+                subtext: 'With our team waiting on call, you have access to our services from wherever you need. Our lightning-fast response times make getting the services you need quick and easy.'
               }
           ]
         }
