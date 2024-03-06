@@ -19,7 +19,7 @@
           <p class="mt-6 text-lg leading-8 text-gray-300">Experience seamless windshield repairs with Sunstate Autoglass – swift, same-day service, ensuring your vehicle's glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <!-- <nuxt-link to="/agent" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400">Online Submission</nuxt-link> -->
-            <button type="button" class="inline-flex items-center gap-x-2 rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
+            <nuxt-link to="/agent" title="Agent Submission" class="inline-flex items-center gap-x-2 rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
               Online Submission
               <!-- <svg class="-mr-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
@@ -34,7 +34,7 @@
               <!-- <svg class="-mr-0.5 h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z" />
               </svg> -->
-            </button>
+            </nuxt-link>
             <nuxt-link to="/services" title="Overview of services" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></nuxt-link>
           </div>
         </div>

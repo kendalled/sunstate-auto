@@ -2,7 +2,7 @@
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
   <form name="Online Submission" netlify>
     <!-- start customer info -->
-    <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
+    <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
         <h2 class="text-base font-semibold leading-7 text-gray-900">Customer Information</h2>
         <p class="mt-1 text-sm leading-6 text-gray-600">Enter the personal & contact details of the customer here.</p>
@@ -118,14 +118,14 @@
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <button disabled type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</button>
+          <a href="#insurance" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
         </div>
       </section>
     </div>
     <!-- end customer info -->
 
     <!-- start insurance -->
-    <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
+    <div id="insurance" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
         <h2 class="text-base font-semibold leading-7 text-gray-900">Insurance Information</h2>
         <p class="mt-1 text-sm leading-6 text-gray-600">Provide the details of the customer's insurance policy.</p>
@@ -195,14 +195,14 @@
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <button disabled type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</button>
+          <a href="#vehicle" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
         </div>
       </section>
     </div>
     <!-- end insurance -->
 
     <!-- start vehicle info -->
-    <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
+    <div id="vehicle" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
         <h2 class="text-base font-semibold leading-7 text-gray-900">Vehicle Information</h2>
         <p class="mt-1 text-sm leading-6 text-gray-600">Describe the details of the customer's vehicle.</p>
@@ -289,14 +289,14 @@
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <button disabled type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</button>
+          <a href="#dealer" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
         </div>
       </section>
     </div>
     <!-- end vehicle info -->
 
     <!-- start agent/dealer info -->
-    <div class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
+    <div id="dealer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
         <h2 class="text-base font-semibold leading-7 text-gray-900">Agent & Dealer Information</h2>
         <p class="mt-1 text-sm leading-6 text-gray-600">Provide various details about yourself and the transaction, as well as any comments.</p>
