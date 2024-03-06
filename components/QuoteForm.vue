@@ -1,6 +1,8 @@
 <template>
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
-  <form name="Online Submission" netlify ref="quoteForm" enctype="multipart/form-data">
+  
+  <client-only>
+  <form name="Online Submission" netlify ref="quoteForm">
     <!-- start customer info -->
     <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
@@ -380,11 +382,12 @@
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <button type="submit" @click.prevent="submitHandler" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit Forms</button>
+          <button type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit Forms</button>
         </div>
       </section>
     </div>
   </form>
+  </client-only>
     <!-- end agent/dealer info -->
 </div>
 </template>
