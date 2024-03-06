@@ -30,19 +30,10 @@
       <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
         <div class="md:grid md:grid-cols-2 md:gap-8">
           <div>
-            <h3 class="text-sm font-semibold leading-6 text-gray-900">Solutions</h3>
+            <h3 class="text-sm font-semibold leading-6 text-gray-900">Services</h3>
             <ul role="list" class="mt-6 space-y-4">
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Marketing</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Analytics</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Commerce</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Insights</a>
+              <li v-for="service in services">
+                <nuxt-link :to="service.link" :title="service.name" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ service.name }}</nuxt-link>
               </li>
             </ul>
           </div>
@@ -69,19 +60,16 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">Company</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</a>
+                <nuxt-link to="/services" title="Our services" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Services</nuxt-link>
               </li>
               <li>
                 <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Blog</a>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Jobs</a>
+                <nuxt-link to="/about" title="About us" class="text-sm leading-6 text-gray-600 hover:text-gray-900">About</nuxt-link>
               </li>
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Press</a>
-              </li>
-              <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Partners</a>
+                <nuxt-link to="/contact" title="Contact page" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Contact</nuxt-link>
               </li>
             </ul>
           </div>
@@ -89,7 +77,7 @@
             <h3 class="text-sm font-semibold leading-6 text-gray-900">Legal</h3>
             <ul role="list" class="mt-6 space-y-4">
               <li>
-                <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claims</a>
+                <nuxt-link to="/agent" title="Insurance Form" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Claims</nuxt-link>
               </li>
               <li>
                 <nuxt-link to="/privacy" title="Privacy Policy" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Privacy</nuxt-link>
@@ -108,3 +96,30 @@
   </div>
 </footer>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      services: [
+        {
+          name: 'Total Replacements',
+          link: '/services#replacements'
+        },
+        {
+          name: 'Side & Rear Windows',
+          link: '/services#windows'
+        },
+        {
+          name: 'Auto Glass Repairs',
+          link: '/services#replacements'
+        },
+        {
+          name: 'Commercial Vehicles',
+          link: '/services#commercial'
+        }
+      ]
+    }
+  }
+}
+</script>
