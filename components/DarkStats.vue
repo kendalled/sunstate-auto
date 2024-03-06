@@ -21,7 +21,7 @@
         </div>
         <div class="flex flex-col bg-white/5 p-8">
           <dt class="text-sm font-semibold leading-6 text-gray-300">Turnaround Time</dt>
-          <dd class="order-first text-3xl font-semibold tracking-tight text-white">4 hour</dd>
+          <dd class="order-first text-3xl font-semibold tracking-tight text-white">1 hour</dd>
         </div>
       </dl>
     </div>
