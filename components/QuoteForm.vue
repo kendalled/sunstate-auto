@@ -3,6 +3,7 @@
   
   <client-only>
   <form name="Online Submission" netlify ref="quoteForm">
+    <input type="hidden" name="form-name" value="Online Submission" /> 
     <!-- start customer info -->
     <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
