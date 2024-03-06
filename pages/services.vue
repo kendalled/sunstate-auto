@@ -28,7 +28,7 @@
               },
               {
                 title: 'Quick Turnarounds',
-                subtext: 'Within 2 hours of your service, your windshield will be ready to go, so you can get back on the road. We have some of the fastest techs in the country.'
+                subtext: 'Within 2 hours of your service, your windshield will be ready to go, so you can get back on the road. We have some of the best techs in the country.'
               },
               {
                 title: 'Customer-Centric Approach',
@@ -65,16 +65,16 @@
           imgAlt: 'Honda windshield getting repaired',
           points: [
               {
-                title: 'Precision Restoration',
-                subtext: 'Our skilled technicians employ advanced techniques to ensure precise and seamless repairs, leaving your windshield looking as good as new.'
+                title: 'Premium Quality Service',
+                subtext: 'Our mission at SunState AutoGlass is to provide you with the highest quality of service! With our team of experts on the job, you are in the right hands.'
               },
               {
-                title: 'Quick Turnarounds',
-                subtext: 'Experience efficient service with our streamlined process, guaranteeing a quick turnaround for chip and crack repairs, minimizing downtime.'
+                title: 'Lightning-Fast Turnarounds',
+                subtext: 'Getting your commercial vehicles back on the road is our top priority. With our fast and quality services, getting your auto glass taken care of couldn’t be easier.'
               },
               {
-                title: 'Crystal-Clear Results',
-                subtext: 'Our state-of-the-art repair methods not only address the visible damage but also enhance visibility, providing you with a crystal-clear windshield for a safer driving experience.'
+                title: 'Customer Friendly Process',
+                subtext: 'Our experts are on call, ready to assist you at a moment\'s notice. With our streamlined customer service process, getting your vehicles serviced is hassle free!'
               }
           ]
         },
