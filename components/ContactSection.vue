@@ -15,9 +15,9 @@
   <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-red-600/10 ring-1 ring-red-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
   <div class="mx-auto max-w-xl lg:max-w-4xl">
     <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your windshield.</h2>
-    <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road.</p>
+    <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road. No spam, just a complimentary quote.</p>
     <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-      <form action="#" method="POST" class="lg:flex-auto">
+      <form netlify name="Simple Quote" method="POST" class="lg:flex-auto">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
@@ -44,7 +44,7 @@
             </div>
           </div>
           <div class="sm:col-span-2">
-            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Message</label>
+            <label for="message" class="block text-sm font-semibold leading-6 text-gray-900">Windshield status</label>
             <div class="mt-2.5">
               <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"></textarea>
             </div>
