@@ -17,7 +17,7 @@
     <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your windshield.</h2>
     <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road. No spam, just a complimentary quote.</p>
     <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-      <form action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
+      <form ref="simpleQuote"  action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
@@ -32,15 +32,15 @@
             </div>
           </div>
           <div>
-            <label for="budget" class="block text-sm font-semibold leading-6 text-gray-900">Insurance provider</label>
+            <label for="insurance" class="block text-sm font-semibold leading-6 text-gray-900">Insurance provider</label>
             <div class="mt-2.5">
-              <input id="budget" name="budget" type="text" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+              <input id="insurance" name="insurance" type="text" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
           <div>
-            <label for="website" class="block text-sm font-semibold leading-6 text-gray-900">Vehicle model</label>
+            <label for="model" class="block text-sm font-semibold leading-6 text-gray-900">Vehicle model</label>
             <div class="mt-2.5">
-              <input type="url" name="website" id="website" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+              <input type="text" name="model" id="model" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
             </div>
           </div>
           <div class="sm:col-span-2">
@@ -51,9 +51,9 @@
           </div>
         </div>
         <div class="mt-10">
-          <button type="submit" class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Let’s talk</button>
+          <button type="submit" @click.prevent="submitHandler()" class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Let’s talk</button>
         </div>
-        <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <a href="#" class="font-semibold text-red-600">privacy&nbsp;policy</a>.</p>
+        <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
       </form>
       <div class="lg:mt-6 lg:w-80 lg:flex-none">
         <img class="h-24 absolute w-auto" src="/minimalfields.png" alt="">
@@ -74,3 +74,13 @@
   </div>
 </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    submitHandler () {
+      this.$refs.simpleQuote.submit()
+    }
+  }
+}
+</script>
