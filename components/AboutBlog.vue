@@ -19,8 +19,8 @@
                   <circle cx="1" cy="1" r="1" />
                 </svg>
                 <div class="flex gap-x-2.5">
-                  <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10">
-                  Michael Foster
+                  <img src="/team/vanessa.png" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10">
+                  Vanessa D.
                 </div>
               </div>
             </div>

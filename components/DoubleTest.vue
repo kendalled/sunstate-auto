@@ -9,7 +9,7 @@
             <p>“Sunstate Autoglass delivered swift and professional windshield replacement for our dealership vehicle. Precision craftsmanship and clear communication made the experience seamless. Highly recommend for top-notch service.”</p>
           </blockquote>
           <figcaption class="mt-10 flex items-center gap-x-6">
-            <img class="h-14 w-14 rounded-full object-cover bg-gray-800" src="https://pictures.dealer.com/c/courtesyhyundaioftampa/1343/a84bbfffe4da20dcfb41129e75765fadx.jpg?impolicy=resize&w=250" alt="">
+            <img class="h-14 w-14 rounded-full object-cover bg-gray-800" src="/rick.jpg" alt="Rick of Courtesy Hyundai Orlando">
             <div class="text-base">
               <div class="font-semibold text-white">Rick A.</div>
               <div class="mt-1 text-gray-400">Service Director</div>
@@ -24,7 +24,7 @@
             <p>“Sunstate Autoglass replaced my side and rear windows flawlessly. Their attention to detail and customer-centric approach made the process stress-free. Highly recommend for quality with a personal touch.”</p>
           </blockquote>
           <figcaption class="mt-10 flex items-center gap-x-6">
-            <img class="h-14 w-14 rounded-full bg-gray-800" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            <img class="h-14 w-14 rounded-full bg-gray-800" src="/team/marybel.png" alt="">
             <div class="text-base">
               <div class="font-semibold text-white">Sarah M.</div>
               <div class="mt-1 text-gray-400">Satisfied Customer</div>
