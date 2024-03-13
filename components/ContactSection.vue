@@ -17,7 +17,7 @@
     <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your windshield.</h2>
     <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road. No spam, just a complimentary quote.</p>
     <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-      <form ref="simpleQuote"  action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
+      <form ref="simpleQuote" action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>

@@ -313,7 +313,14 @@
       <section class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <MySelect class="col-span-3 sm:col-span-full" title="Sunstate Representative" :options="employeeList" />
+            <MySelect @chosen="updateRep" class="col-span-3 sm:col-span-full" title="Sunstate Representative" :options="employeeList" />
+
+            <div class="hidden">
+              <label for="rep-name" class="block text-sm font-medium leading-6 text-gray-900">Sunstate Representative Name</label>
+              <div class="mt-2">
+                <input id="rep-name" name="rep-name" type="text" v-model="rep" />
+              </div>
+            </div>
 
             <div class="col-span-3">
               <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent Email Address</label>
@@ -407,12 +414,17 @@ export default {
         'Francisco',
         'Vanessa',
         'Other'
-      ]
+      ],
+      rep: 'Not Selected'
     }
   },
   methods: {
     submitHandler () {
       this.$refs.quoteForm.submit()
+    },
+    updateRep (val) {
+      this.rep = val
+      console.log(this.rep)
     }
   }
 }
