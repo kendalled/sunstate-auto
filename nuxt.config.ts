@@ -8,6 +8,9 @@ export default defineNuxtConfig({
         }
     }
   },
+  routeRules: {
+    '/contact-us': { redirect: { to: '/contact', statusCode: 301 } },
+  },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-aos',
