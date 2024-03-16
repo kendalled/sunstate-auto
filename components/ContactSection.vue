@@ -93,7 +93,7 @@
         }).then(response => {
           if (response.ok) {
             status.innerHTML = "Thanks for your submission!";
-            form.reset()
+            window.location.href = "https://sunstateautoglass.com/thanks"; 
           } else {
             response.json().then(data => {
               if (Object.hasOwn(data, 'errors')) {
