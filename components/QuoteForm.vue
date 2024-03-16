@@ -1,6 +1,6 @@
 <template>
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
-  <form name="Online Submission" ref="quoteForm" method="POST" enctype="multipart/form-data" action="https://formspree.io/f/mzbnvejd">
+  <form name="Online Submission" id="agent-quote" ref="quoteForm" method="POST" enctype="multipart/form-data" action="https://formspree.io/f/mzbnvejd">
     <input type="hidden" name="form-name" value="Online Submission" /> 
     <!-- start customer info -->
     <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
@@ -391,11 +391,11 @@
             </fieldset>
           </div>
 
-
           </div>
         </div>
         <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <button type="submit" @click.prevent="submitHandler()" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit Form</button>
+          <p id="quote-status"></p>
+          <button type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit Form</button>
         </div>
       </section>
     </div>
@@ -418,10 +418,39 @@ export default {
       rep: 'Not Selected'
     }
   },
+  mounted () {
+      var form = document.getElementById("agent-quote");
+    
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("quote-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            window.location.href = "https://sunstateautoglass.com/thanks"; 
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+      },
   methods: {
-    submitHandler () {
-      this.$refs.quoteForm.submit()
-    },
     updateRep (val) {
       this.rep = val
       console.log(this.rep)

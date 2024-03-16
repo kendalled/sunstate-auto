@@ -53,13 +53,13 @@
         <div class="mt-10">
           <button type="submit" class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Let’s talk</button>
         </div>
-        <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
+        <p id="quote-status" class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
       </form>
       <div class="lg:mt-6 lg:w-80 lg:flex-none">
         <img class="h-24 absolute w-auto" src="/minimalfields.png" alt="">
         <figure class="mt-[7rem]">
           <blockquote class="text-lg font-semibold leading-8 text-gray-900">
-            <p id="quote-status">“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
+            <p>“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
           </blockquote>
           <figcaption class="mt-10 flex gap-x-6">
             <img src="/fake4.jpeg" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
