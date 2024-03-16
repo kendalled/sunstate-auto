@@ -17,7 +17,7 @@
     <h2 class="text-4xl font-bold tracking-tight text-gray-900">Let’s talk about your windshield.</h2>
     <p class="mt-2 text-lg leading-8 text-gray-600">We help companies and individuals get back on the road. No spam, just a complimentary quote.</p>
     <div class="mt-16 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
-      <form ref="simpleQuote" action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
+      <form ref="simpleQuote" id="simple-quote" action="https://formspree.io/f/xzbnvvee" name="Simple Quote" method="POST" class="lg:flex-auto">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-gray-900">First name</label>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="mt-10">
-          <button type="submit" @click.prevent="submitHandler()" class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Let’s talk</button>
+          <button type="submit" class="block w-full rounded-md bg-red-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Let’s talk</button>
         </div>
         <p class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
       </form>
@@ -59,7 +59,7 @@
         <img class="h-24 absolute w-auto" src="/minimalfields.png" alt="">
         <figure class="mt-[7rem]">
           <blockquote class="text-lg font-semibold leading-8 text-gray-900">
-            <p>“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
+            <p id="quote-status">“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
           </blockquote>
           <figcaption class="mt-10 flex gap-x-6">
             <img src="/fake4.jpeg" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
@@ -76,11 +76,38 @@
 </template>
 
 <script>
-export default {
-  methods: {
-    submitHandler () {
-      this.$refs.simpleQuote.submit()
-    }
+  export default {
+    mounted () {
+      var form = document.getElementById("simple-quote");
+    
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("quote-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          if (response.ok) {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset()
+          } else {
+            response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+              } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+              }
+            })
+          }
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+      }
   }
-}
 </script>
