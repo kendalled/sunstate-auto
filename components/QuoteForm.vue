@@ -445,7 +445,7 @@ export default {
             })
           }
         }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
+          status.innerHTML = "Oops! There was a problem submitting your form " + error.message
         });
       }
       form.addEventListener("submit", handleSubmit)
