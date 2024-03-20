@@ -64,8 +64,8 @@
           <figcaption class="mt-10 flex gap-x-6">
             <img src="/fake4.jpeg" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
             <div>
-              <div class="text-base font-semibold text-gray-900">Dan Fields</div>
-              <div class="text-sm leading-6 text-gray-600">CEO of Fields BMW</div>
+              <div class="text-base font-semibold text-gray-900">Richard Gaffney</div>
+              <div class="text-sm leading-6 text-gray-600">Service Director of Fields BMW</div>
             </div>
           </figcaption>
         </figure>
