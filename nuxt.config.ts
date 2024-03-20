@@ -11,14 +11,6 @@ export default defineNuxtConfig({
   routeRules: {
     '/contact-us': { redirect: { to: '/contact', statusCode: 301 } },
   },
-  security: {
-    headers: {
-      contentSecurityPolicy: {
-        'form-action': ["'self'", 'data:', 'https://formspree.io'],
-        'connect-src': ["'self'", 'data:', 'https://formspree.io'],
-      },
-    },
-  },
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-aos',
