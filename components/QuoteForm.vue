@@ -440,12 +440,12 @@ export default {
               if (Object.hasOwn(data, 'errors')) {
                 status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
               } else {
-                status.innerHTML = "Oops! There was a problem submitting your form"
+                status.innerHTML = "Oops! There was a problem submitting your forms"
               }
             })
           }
         }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form " + error.message
+          status.innerHTML = "Oops! There was a problem submitting your form: " + error.message
         });
       }
       form.addEventListener("submit", handleSubmit)
