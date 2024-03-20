@@ -113,7 +113,7 @@ export default {
     return {
       highlighted: 0,
       expanded: false,
-      selected: this.options[0]
+      selected: this.options[4]
     }
   },
   computed: {

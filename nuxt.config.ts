@@ -14,7 +14,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-aos',
-    'nuxt-security',
     ['@nuxtjs/google-fonts', {
       families: {
         Inter: '300..900'
