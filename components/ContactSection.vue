@@ -89,7 +89,7 @@
           body: data,
           headers: {
               'Accept': 'application/json',
-              'Content-Security-Policy': "form-action 'self' formspree.io; connect-src 'self' formspree.io"
+              'Content-Security-Policy': "form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io"
           }
         }).then(response => {
           if (response.ok) {
