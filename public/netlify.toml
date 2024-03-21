@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io;"
