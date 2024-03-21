@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; script-src 'self'; object-src 'none'"
+    Content-Security-Policy = "form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; script-src 'self' https://sunstateautoglass.com; object-src 'none'"
