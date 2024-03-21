@@ -19,7 +19,7 @@
 							</p>
             </blockquote>
             <figcaption class="mt-6 flex gap-x-4 text-sm leading-6">
-              <img src="/vanessa.png" alt="Customer image" class="h-6 w-6 flex-none rounded-full">
+              <img src="/team/vanessa.png" alt="Customer image" class="h-6 w-6 flex-none rounded-full">
               <div><span class="font-semibold text-gray-900">{{ reviewer }}</span> – Marketing Manager</div>
             </figcaption>
           </figure>

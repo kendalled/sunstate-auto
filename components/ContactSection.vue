@@ -88,7 +88,8 @@
           method: form.method,
           body: data,
           headers: {
-              'Accept': 'application/json'
+              'Accept': 'application/json',
+              'Content-Security-Policy': "form-action 'self' formspree.io; connect-src 'self' formspree.io"
           }
         }).then(response => {
           if (response.ok) {

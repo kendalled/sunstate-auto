@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContactSection />
+    <AltContact />
     <ContactInfo />
   </div>
 </template>
