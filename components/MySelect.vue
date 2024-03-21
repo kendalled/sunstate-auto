@@ -132,7 +132,6 @@ export default {
       if (newVal) {
         this.highlighted = this.ind
       } else if (!newVal && process.browser) {
-        console.log('closeed')
         document.getElementById('select-button-' + this.title).focus()
       }
     },

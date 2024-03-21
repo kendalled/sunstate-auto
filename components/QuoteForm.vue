@@ -453,7 +453,6 @@ export default {
   methods: {
     updateRep (val) {
       this.rep = val
-      console.log(this.rep)
     }
   }
 }
