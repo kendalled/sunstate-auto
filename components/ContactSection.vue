@@ -56,16 +56,16 @@
         <p id="quote-status" class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
       </form>
       <div class="lg:mt-6 lg:w-80 lg:flex-none">
-        <img class="h-24 absolute w-auto" src="/minimalfields.png" alt="">
+        <img class="h-24 absolute w-auto" src="/audi.svg" alt="Audi Logo">
         <figure class="mt-[7rem]">
           <blockquote class="text-lg font-semibold leading-8 text-gray-900">
             <p>“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
           </blockquote>
           <figcaption class="mt-10 flex gap-x-6">
-            <img src="/fake4.jpeg" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
+            <img src="/fake4.jpeg" alt="James Colgen Photo" class="h-12 w-12 flex-none rounded-full bg-gray-50">
             <div>
-              <div class="text-base font-semibold text-gray-900">Richard Gaffney</div>
-              <div class="text-sm leading-6 text-gray-600">Service Director of Fields BMW</div>
+              <div class="text-base font-semibold text-gray-900">James Colgen</div>
+              <div class="text-sm leading-6 text-gray-600">Dealership Owner</div>
             </div>
           </figcaption>
         </figure>
