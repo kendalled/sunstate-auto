@@ -56,7 +56,7 @@
         <p id="quote-status" class="mt-4 text-sm leading-6 text-gray-500">By submitting this form, I agree to the <nuxt-link to="/privacy" title="Privacy Policy" class="font-semibold text-red-600">privacy&nbsp;policy</nuxt-link>.</p>
       </form>
       <div class="lg:mt-6 lg:w-80 lg:flex-none">
-        <img class="h-24 absolute w-auto" src="/audi.svg" alt="Audi Logo">
+        <img class="h-24 absolute w-auto" src="/dealers/audi.svg" alt="Audi Logo">
         <figure class="mt-[7rem]">
           <blockquote class="text-lg font-semibold leading-8 text-gray-900">
             <p>“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
