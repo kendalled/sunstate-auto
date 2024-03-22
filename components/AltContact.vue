@@ -63,7 +63,7 @@
               <p>“Sunstate AutoGlass repaired my windshield in under 2 hours, and with exceptional customer service too. Our dealership will continue to trust them with our customers.”</p>
             </blockquote>
             <figcaption class="mt-10 flex gap-x-6">
-              <img src="/fake4.jpeg" alt="" class="h-12 w-12 flex-none rounded-full bg-gray-50">
+              <img src="/fake4.jpeg" alt="James Colgen Photo" class="h-12 w-12 flex-none rounded-full bg-gray-50">
               <div>
                 <div class="text-base font-semibold text-gray-900">James Colgen</div>
                 <div class="text-sm leading-6 text-gray-600">Dealership Owner</div>
