@@ -49,7 +49,7 @@ export default {
         },
         {
           title: 'Can hail damage your windshield? A 5 minute guide to weather damage',
-          image: '/cracked.png',
+          image: '/cracked-optim.png',
           date: 'Jan 3, 2024'
         },
         {
