@@ -3,7 +3,14 @@
       <!-- todo: do smarter -mt-7 og spacing -->
     <div class="relative isolate overflow-hidden -mt-12">
       <!-- &auto=format&fit=crop&w=2830&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply -->
-      <img src="/cracked-optim.png" alt="Cracked Windshield" class="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
+      <picture>
+        <!-- WebP format source -->
+        <source srcset="/cracked-optim.webp" type="image/webp">
+        <!-- PNG format source (fallback for browsers that don't support WebP) -->
+        <source srcset="/cracked-optim.png" type="image/png">
+        <!-- Image element with fallback -->
+        <img src="/cracked-optim.png" alt="Cracked Windshield" class="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
+      </picture>
       <div class="absolute inset-0 -z-10 h-full w-full object-cover bg-gray-900 opacity-85 mix-blend-multiply" />
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
         <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
