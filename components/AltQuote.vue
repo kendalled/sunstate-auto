@@ -143,9 +143,9 @@
           <div class="px-4 py-6 sm:p-8">
             <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
               <div class="sm:col-span-full">
-                <label for="institution-name" class="block text-sm font-medium leading-6 text-gray-900">Institution Name</label>
+                <label for="carrier-name" class="block text-sm font-medium leading-6 text-gray-900">Insurance Carrier Name</label>
                 <div class="mt-2">
-                  <input type="text" name="institution-name" id="institution-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input type="text" name="carrier-name" id="carrier-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
