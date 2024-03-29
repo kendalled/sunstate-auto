@@ -126,7 +126,7 @@
             </div>
           </div>
           <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-            <a href="#insurance" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
+            <a @click.prevent="testScroll('insurance')" class="cursor-pointer rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
           </div>
         </section>
       </div>
@@ -203,7 +203,7 @@
             </div>
           </div>
           <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-            <a href="#vehicle" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
+            <a @click.prevent="testScroll('vehicle')" class="cursor-pointer rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
           </div>
         </section>
       </div>
@@ -297,7 +297,7 @@
             </div>
           </div>
           <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-            <a href="#dealer" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
+            <a @click.prevent="testScroll('dealer')" class="cursor-pointer rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
           </div>
         </section>
       </div>
@@ -421,6 +421,11 @@
     methods: {
       updateRep (val) {
         this.rep = val
+      },
+      testScroll (elem) {
+        if (process.browser) {
+          document.getElementById(elem).scrollIntoView({ behavior: 'smooth', block: 'center' })
+        }
       }
     }
   }
