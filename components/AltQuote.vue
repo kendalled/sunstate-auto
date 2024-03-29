@@ -415,7 +415,7 @@
           'Vanessa',
           'Other'
         ],
-        rep: 'Not Selected'
+        rep: 'Other'
       }
     },
     methods: {
