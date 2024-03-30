@@ -32,6 +32,18 @@
                 <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
+            <div class="sm:col-span-1">
+              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Customer Email</label>
+              <div class="mt-2">
+                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
+            <div class="sm:col-span-1">
+              <label for="customer-phone-number" class="block text-sm font-medium leading-6 text-gray-900">Customer Phone Number</label>
+              <div class="mt-2">
+                <input id="customer-phone-number" name="customer-phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+              </div>
+            </div>
             <div>
               <label for="insurance" class="block text-sm font-semibold leading-6 text-gray-900">Insurance provider</label>
               <div class="mt-2.5">
