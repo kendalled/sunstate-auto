@@ -415,11 +415,6 @@
     methods: {
       updateRep (val) {
         this.rep = val
-      },
-      testScroll (elem) {
-        if (process.browser) {
-          document.getElementById(elem).scrollIntoView({ behavior: 'smooth', block: 'center' })
-        }
       }
     }
   }
