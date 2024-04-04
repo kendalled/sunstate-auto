@@ -14,14 +14,14 @@
               <div class="sm:col-span-3">
                 <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
                 <div class="mt-2">
-                  <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
               <div class="sm:col-span-3">
                 <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
                 <div class="mt-2">
-                  <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
@@ -34,7 +34,7 @@
               <div class="sm:col-span-3">
                 <label for="customer-phone-number" class="block text-sm font-medium leading-6 text-gray-900">Customer Phone Number</label>
                 <div class="mt-2">
-                  <input id="customer-phone-number" name="customer-phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required id="customer-phone-number" name="customer-phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
@@ -42,7 +42,7 @@
               <div class="col-span-full">
                 <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Address Line 1</label>
                 <div class="mt-2">
-                  <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
               <div class="col-span-full">
@@ -55,7 +55,7 @@
               <div class="sm:col-span-2 sm:col-start-1">
                 <label for="city" class="block text-sm font-medium leading-6 text-gray-900">City</label>
                 <div class="mt-2">
-                  <input type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="city" id="city" autocomplete="address-level2" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
@@ -120,7 +120,7 @@
               <div class="sm:col-span-2">
                 <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
                 <div class="mt-2">
-                  <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
             </div>
@@ -143,7 +143,7 @@
               <div class="sm:col-span-full">
                 <label for="carrier-name" class="block text-sm font-medium leading-6 text-gray-900">Insurance Carrier Name</label>
                 <div class="mt-2">
-                  <input type="text" name="carrier-name" id="carrier-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="carrier-name" id="carrier-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
@@ -219,14 +219,14 @@
                 <!-- todo: figure out why spacing not consistent -->
                 <label for="year" class="block text-sm font-medium leading-6 text-gray-900">Year</label>
                 <div class="mt-2">
-                  <input type="text" name="year" id="year" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="year" id="year" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
               <div class="col-span-3 sm:col-span-2">
                 <label for="make" class="block text-sm font-medium leading-6 text-gray-900">Make</label>
                 <div class="mt-2">
-                  <input type="text" name="make" id="make" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required type="text" name="make" id="make" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
@@ -319,14 +319,14 @@
               <div class="col-span-3">
                 <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent / Dealer Email</label>
                 <div class="mt-2">
-                  <input id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
               <div class="col-span-3">
                 <label for="insurance-agency" class="block text-sm font-medium leading-6 text-gray-900">Insurance Agency Name</label>
                 <div class="mt-2">
-                  <input id="insurance-agency" name="insurance-agency" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required id="insurance-agency" name="insurance-agency" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
