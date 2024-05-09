@@ -20,6 +20,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxtjs/google-analytics": "^2.4.0",
     "click-outside-vue3": "^4.0.1"
   }
 }
