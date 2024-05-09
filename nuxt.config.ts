@@ -1,9 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  googleAnalytics: {
-    id: 'G-QVSBF89JRV'
-  },
   vite: {
     server: {
         headers: {
@@ -11,15 +8,16 @@ export default defineNuxtConfig({
         }
     }
   },
+  gtag: {
+    id: 'G-QVSBF89JRV'
+  },
   routeRules: {
     '/contact-us': { redirect: { to: '/contact', statusCode: 301 } },
   },
-  buildModules: [
-    '@nuxtjs/google-analytics'
-  ],
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-aos',
+    'nuxt-gtag',
     ['@nuxtjs/google-fonts', {
       families: {
         Inter: '300..900'
