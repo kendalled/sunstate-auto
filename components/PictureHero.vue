@@ -21,7 +21,8 @@
             No cost windshield replacement with insurance. <nuxt-link to="/services" title="Overview of services" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Learn more <span aria-hidden="true">&rarr;</span></nuxt-link>
           </div>
         </div>
-        <div class="text-center">
+        <!-- og was no -mt-4 and no mt-2 -->
+        <div class="text-center -mt-4">
           <span class="text-2xl font-bold tracking-tight text-gray-100/90 sm:text-3xl">Orlando - Tampa</span>
           <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Windshield repairs have never been easier.</h1>
           <p class="mt-6 text-lg leading-8 text-gray-300">Experience seamless windshield repairs with Sunstate Autoglass – swift, same-day service, ensuring your vehicle's glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
