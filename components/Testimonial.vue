@@ -56,7 +56,7 @@ export default {
     },
     img: {
       type: String,
-      default: '/broken.png'
+      default: '/broken-optim.png'
     },
     imgAlt: {
       type: String,

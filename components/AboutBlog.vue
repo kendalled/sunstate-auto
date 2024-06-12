@@ -54,7 +54,7 @@ export default {
         },
         {
           title: 'Auto glass for luxury vehicles - 10 tips to keep your windshield safe',
-          image: '/broken.png',
+          image: '/broken-optim.png',
           date: 'Feb 19, 2024'
         }
 
