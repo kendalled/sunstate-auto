@@ -1,18 +1,4 @@
 <template>
-  <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
 <div class="bg-gray-100">
   <div class="mx-auto max-w-7xl py-24 sm:px-2 sm:py-32 lg:px-4">
     <div class="mx-auto max-w-2xl px-4 lg:max-w-none">
@@ -22,7 +8,7 @@
           <h2 class="text-4xl mt-2 font-bold tracking-tight text-gray-900">We built our business on great customer service.</h2>
           <p class="mt-4 text-gray-500">Since we founded Sunstate AutoGlass, we have strived to offer the best service in Florida when it comes to your windshield. As a family-owned business, we always treat our customers like family. Every single repair matters to us, and our customers always come first. Learn more about our services and our story below.</p>
         </div>
-        <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg bg-gray-100">
+        <div class="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100">
           <img src="/glassrepair.jpg" alt="" class="object-cover object-center">
         </div>
         <!-- <div class="aspect-h-2 w-auto h-[384px] aspect-w-3 overflow-hidden relative rounded-lg bg-gray-100">
