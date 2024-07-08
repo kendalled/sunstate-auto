@@ -24,8 +24,8 @@
         <!-- og was no -mt-4 and no mt-2 -->
         <div class="text-center -mt-4">
           <span class="text-2xl font-bold tracking-tight text-gray-100/90 sm:text-3xl">Orlando - Tampa</span>
-          <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Windshield repairs have never been easier.</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-300">Get seamless windshield repairs & replacements with SunState AutoGlass. Our swift, same-day service ensures your auto glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
+          <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Windshield repair has never been easier.</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-300">Get seamless windshield repair & replacement with SunState AutoGlass. Our swift, same-day service ensures your auto glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <!-- <nuxt-link to="/agent" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400">Online Submission</nuxt-link> -->
             <nuxt-link to="/agent" title="Agent Submission" class="inline-flex items-center gap-x-2 rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">
