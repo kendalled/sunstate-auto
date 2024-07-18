@@ -27,7 +27,7 @@
                 </div>
                 <div class="flex flex-col-reverse gap-y-4">
                   <dt class="text-base leading-7 text-gray-600">Turnaround Time</dt>
-                  <dd class="text-5xl font-semibold tracking-tight text-gray-900">4-6 Hour</dd>
+                  <dd class="text-5xl font-semibold tracking-tight text-gray-900">1 Hour</dd>
                 </div>
               </dl>
             </div>
