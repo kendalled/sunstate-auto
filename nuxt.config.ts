@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'https://sunstateautoglass.com',
-    name: 'SunState AutoGlass',
+    name: 'SunState Auto Glass',
     description: 'Trust SunState Auto Glass for top-notch windshield repair since 2007, proudly serving Orlando and Tampa. Our experienced team ensures swift, same-day service, prioritizing your safety on the road. Choose SunState for quality repairs and unmatched expertise in the Central Florida area.',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
