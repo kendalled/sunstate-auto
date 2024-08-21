@@ -1,6 +1,6 @@
 <template>
   <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
-    <img :src="image" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <img :src="image" :alt="heading" class="absolute inset-0 -z-10 h-full w-full object-cover">
     <div class="absolute inset-0 -z-10 h-full w-full object-cover bg-gray-900 opacity-85 mix-blend-multiply" />
 
     <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
