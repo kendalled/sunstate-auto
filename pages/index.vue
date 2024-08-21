@@ -2,7 +2,7 @@
   <main>
     <Head>
       <Title>SunState Auto Glass | Orlando Windshield Replacement & Repair</Title>
-      <Meta name="description" content="Trust SunState Auto Glass for top-notch windshield repair since 2007, proudly serving Orlando and Tampa. Our experienced team ensures swift, same-day service, prioritizing your safety on the road. Choose SunState for quality repairs and unmatched expertise in the Central Florida area."/>
+      <Meta name="description" content="Trust SunState Auto Glass for over 17 years of expert windshield replacement and auto glass repair in Orlando and Tampa. We offer fast, reliable service with free mobile repairs, ensuring you get back on the road safely. Contact us today for top-rated service!" />
     </Head>
     <PictureHero />
 		<TimelineFeat />
