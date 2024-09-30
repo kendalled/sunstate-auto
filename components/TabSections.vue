@@ -53,7 +53,7 @@
         <div id="features-panel-3" class="space-y-16 pt-10 lg:pt-16" aria-labelledby="features-tab-3" role="tabpanel" tabindex="0">
           <div class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-8">
             <div class="mt-6 lg:col-span-5 lg:mt-0">
-              <h3 class="text-lg font-medium text-gray-900">Static recalibration</h3>
+              <h3 class="text-lg font-medium text-gray-900">Static Recalibration</h3>
               <p class="mt-2 text-base text-gray-500">This is a stationary process performed in our facility to recalibrate your car’s safety systems after a windshield replacement. Your vehicle is positioned and aligned with specialized tools to ensure that we are getting the most precise calibrations possible. Static calibration is mainly used for your car's radar and cameras on your windshield. While this process sounds simple, it can be quite complex so make sure you are entrusting certified experts to perform this maintenance.</p>
             </div>
             <div class="lg:col-span-7">
