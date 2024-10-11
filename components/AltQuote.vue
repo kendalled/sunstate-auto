@@ -319,7 +319,7 @@
               <div class="col-span-3">
                 <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent / Dealer Email</label>
                 <div class="mt-2">
-                  <input required id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <input required id="agent-email" name="agent-email" type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g., name@example.com)." class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
                 </div>
               </div>
   
