@@ -4,7 +4,7 @@
       Terms of Service
     </h1>
     <h2 class="mt-1 text-lg text-gray-600">
-      Effective: February 28th, 2024
+      Effective: January 28th, 2025
     </h2>
     <div class="mt-4">
       <ContentChunk v-for="item in policyCopy" :key="item.heading" :heading="item.heading" :copy="item.para" />
