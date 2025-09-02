@@ -1,7 +1,8 @@
 <template>
 <div class="space-y-10 divide-y divide-gray-900/10 max-w-7xl mx-auto p-6 lg:px-8">
-  <form name="Online Submission" id="agent-quote" ref="quoteForm" method="POST" enctype="multipart/form-data" action="https://formspree.io/f/mzbnvejd">
-    <input type="hidden" name="form-name" value="Online Submission" /> 
+  <slot name="alert"></slot>
+  <form name="Agent Submission Simple" id="agent-quote-simple" method="POST" netlify>
+    <input type="hidden" name="form-name" value="Agent Submission Simple" /> 
     <!-- start customer info -->
     <div id="customer" class="grid grid-cols-1 gap-x-8 gap-y-8 pt-10 md:grid-cols-3">
       <div class="px-4 sm:px-0">
@@ -14,19 +15,19 @@
             <div class="sm:col-span-3">
               <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
               <div class="mt-2">
-                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
             <div class="sm:col-span-3">
               <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
               <div class="mt-2">
-                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
             <div class="sm:col-span-3">
-              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+              <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Customer Email</label>
               <div class="mt-2">
                 <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
@@ -34,15 +35,14 @@
             <div class="sm:col-span-3">
               <label for="customer-phone-number" class="block text-sm font-medium leading-6 text-gray-900">Customer Phone Number</label>
               <div class="mt-2">
-                <input id="customer-phone-number" name="customer-phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required id="customer-phone-number" name="customer-phone-number" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
-
 
             <div class="col-span-full">
               <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Address Line 1</label>
               <div class="mt-2">
-                <input type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required type="text" name="street-address" id="street-address" autocomplete="street-address" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
             <div class="col-span-full">
@@ -120,14 +120,12 @@
             <div class="sm:col-span-2">
               <label for="postal-code" class="block text-sm font-medium leading-6 text-gray-900">ZIP / Postal code</label>
               <div class="mt-2">
-                <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required type="text" name="postal-code" id="postal-code" autocomplete="postal-code" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <a href="#insurance" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
-        </div>
+        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8 h-[4.313rem]" />
       </section>
     </div>
     <!-- end customer info -->
@@ -143,9 +141,9 @@
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div class="sm:col-span-full">
-              <label for="institution-name" class="block text-sm font-medium leading-6 text-gray-900">Institution Name</label>
+              <label for="institution-name" class="block text-sm font-medium leading-6 text-gray-900">Insurance Carrier Name</label>
               <div class="mt-2">
-                <input type="text" name="institution-name" id="institution-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required type="text" name="institution-name" id="institution-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
@@ -164,10 +162,6 @@
             </div>
 
             <div class="sm:col-span-2">
-              <!-- <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Deductible Amount</label>
-              <div class="mt-2">
-                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
-              </div> -->
               <label for="deductible-amount" class="block text-sm font-medium leading-6 text-gray-900">Deductible Amount</label>
               <div class="relative mt-2 rounded-md shadow-sm">
                 <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -202,9 +196,7 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <a href="#vehicle" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
-        </div>
+        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8 h-[4.313rem]" />
       </section>
     </div>
     <!-- end insurance -->
@@ -220,7 +212,6 @@
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
             <div class="col-span-3 sm:col-span-2">
-              <!-- todo: figure out why spacing not consistent -->
               <label for="year" class="block text-sm font-medium leading-6 text-gray-900">Year</label>
               <div class="mt-2">
                 <input type="text" name="year" id="year" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
@@ -250,22 +241,21 @@
             
             <fieldset class="col-span-3">
               <legend class="text-sm font-semibold leading-6 text-gray-900">Body Type</legend>
-              <!-- <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p> -->
               <div class="mt-6 space-y-6">
                 <div class="flex items-center gap-x-3">
-                  <input id="body-twodoor" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="body-twodoor" name="body-type" value="2 Door" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="body-twodoor" class="block text-sm font-medium leading-6 text-gray-900">2 Door</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="body-fourdoor" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="body-fourdoor" name="body-type" value="4 Door" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="body-fourdoor" class="block text-sm font-medium leading-6 text-gray-900">4 Door</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="body-wagon" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="body-wagon" name="body-type" value="Wagon" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="body-wagon" class="block text-sm font-medium leading-6 text-gray-900">Wagon</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="body-other" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="body-other" name="body-type" value="Other" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="body-other" class="block text-sm font-medium leading-6 text-gray-900">Other</label>
                 </div>
               </div>
@@ -273,22 +263,21 @@
 
             <fieldset class="col-span-3">
               <legend class="text-sm font-semibold leading-6 text-gray-900">Glass to be Replaced</legend>
-              <!-- <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p> -->
               <div class="mt-6 space-y-6">
                 <div class="flex items-center gap-x-3">
-                  <input id="glass-windshield" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="glass-windshield" name="glass-replaced" value="Windshield" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="glass-windshield" class="block text-sm font-medium leading-6 text-gray-900">Windshield</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="glass-back" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="glass-back" name="glass-replaced" value="Back Glass" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="glass-back" class="block text-sm font-medium leading-6 text-gray-900">Back Glass</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="glass-door" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="glass-door" name="glass-replaced" value="Door Glass" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="glass-door" class="block text-sm font-medium leading-6 text-gray-900">Door Glass</label>
                 </div>
                 <div class="flex items-center gap-x-3">
-                  <input id="glass-other" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="glass-other" name="glass-replaced" value="Other" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="glass-other" class="block text-sm font-medium leading-6 text-gray-900">Other</label>
                 </div>
               </div>
@@ -296,9 +285,7 @@
             
           </div>
         </div>
-        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <a href="#dealer" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Continue</a>
-        </div>
+        <div class="flex items-center justify-end gap-x-6 border-t border-gray-900/10 px-4 py-4 sm:px-8 h-[4.313rem]" />
       </section>
     </div>
     <!-- end vehicle info -->
@@ -313,19 +300,24 @@
       <section class="bg-white shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl md:col-span-2">
         <div class="px-4 py-6 sm:p-8">
           <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-            <MySelect @chosen="updateRep" class="col-span-3 sm:col-span-full" title="Sunstate Representative" :options="employeeList" />
-
-            <div class="hidden">
-              <label for="rep-name" class="block text-sm font-medium leading-6 text-gray-900">Sunstate Representative Name</label>
+            
+            <div class="col-span-3 sm:col-span-full">
+              <label for="rep-name" class="block text-sm font-medium leading-6 text-gray-900">Sunstate Representative</label>
               <div class="mt-2">
-                <input id="rep-name" name="rep-name" type="text" v-model="rep" />
+                <select id="rep-name" name="rep-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                  <option value="Bobby">Bobby</option>
+                  <option value="Francisco">Francisco</option>
+                  <option value="Haley">Haley</option>
+                  <option value="Vanessa">Vanessa</option>
+                  <option value="Other" selected>Other</option>
+                </select>
               </div>
             </div>
 
             <div class="col-span-3">
-              <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent Email Address</label>
+              <label for="agent-email" class="block text-sm font-medium leading-6 text-gray-900">Agent / Dealer Email</label>
               <div class="mt-2">
-                <input id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required id="agent-email" name="agent-email" type="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
 
@@ -346,25 +338,23 @@
             <div class="col-span-3 sm:col-span-2">
               <label for="referred-by" class="block text-sm font-medium leading-6 text-gray-900">Referred By</label>
               <div class="mt-2">
-                <input id="referred-by" name="referred-by" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
+                <input required id="referred-by" name="referred-by" type="text" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6">
               </div>
             </div>
-            <div class="col-span-3 sm:col-span-2">
-            <legend class="text-sm font-medium text-gray-900">Spanish Speaking Customer</legend>
-            <fieldset class="mt-3.5">
-              <legend class="sr-only">Spanish Speaking Customer</legend>
-              <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+            
+            <fieldset class="col-span-3 sm:col-span-2">
+              <legend class="text-sm font-medium text-gray-900">Spanish Speaking Customer</legend>
+              <div class="mt-3.5 space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                 <div class="flex items-center">
-                  <input id="spanish" name="spanish-speaking" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="spanish" name="spanish-speaking" value="Yes" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="spanish" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
                 </div>
                 <div class="flex items-center">
-                  <input id="english" name="spanish-speaking" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="english" name="spanish-speaking" value="No" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="english" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
                 </div>
               </div>
             </fieldset>
-          </div>
 
             <div class="col-span-3 sm:col-span-full">
               <label for="Comments" class="block text-sm font-medium leading-6 text-gray-900">Comments</label>
@@ -374,34 +364,28 @@
               <p class="mt-3 text-sm leading-6 text-gray-600">Note any additional comments here.</p>
             </div>
 
-          <div class="col-span-3 sm:col-span-full">
-            <legend class="text-sm font-medium text-gray-900">Confirmation Email?</legend>
-            <fieldset class="mt-2">
-              <legend class="sr-only">Confirmation Email</legend>
-              <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+            <fieldset class="col-span-3 sm:col-span-full">
+              <legend class="text-sm font-medium text-gray-900">Confirmation Email?</legend>
+              <div class="mt-2 space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                 <div class="flex items-center">
-                  <input id="yes" name="confirmation-email" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="yes" name="confirmation-email" value="Yes" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="yes" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
                 </div>
                 <div class="flex items-center">
-                  <input id="no" name="confirmation-email" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <input id="no" name="confirmation-email" value="No" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                   <label for="no" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
                 </div>
               </div>
             </fieldset>
-          </div>
 
           </div>
         </div>
         <div class="flex items-center justify-between border-t border-gray-900/10 px-4 py-4 sm:px-8">
-          <div class="flex items-center gap-x-4">
-            <p id="quote-status"></p>
-            <div class="flex items-center gap-x-2 text-sm text-gray-500">
-              <svg class="h-4 w-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" />
-              </svg>
-              <nuxt-link to="/agent2" class="text-blue-600 hover:text-blue-500 font-medium underline">Having trouble? Try simplified form</nuxt-link>
-            </div>
+          <div class="flex items-center gap-x-2 text-sm text-gray-500">
+            <svg class="h-4 w-4 text-green-500" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <nuxt-link to="/agent" class="text-blue-600 hover:text-blue-500 font-medium underline">Want enhanced features? Try advanced form</nuxt-link>
           </div>
           <button type="submit" class="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600">Submit Form</button>
         </div>
@@ -414,54 +398,6 @@
 
 <script>
 export default {
-  data () {
-    return {
-      employeeList: [
-        'Bobby',
-        'Francisco',
-        'Haley',
-        'Vanessa',
-        'Other'
-      ],
-      rep: 'Not Selected'
-    }
-  },
-  mounted () {
-      var form = document.getElementById("agent-quote");
-    
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("quote-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json',
-          }
-        }).then(response => {
-          if (response.ok) {
-            status.innerHTML = "Thanks for your submission!";
-            window.location.href = "https://sunstateautoglass.com/thanks"; 
-          } else {
-            response.json().then(data => {
-              if (Object.hasOwn(data, 'errors')) {
-                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-              } else {
-                status.innerHTML = "Oops! There was a problem submitting your forms"
-              }
-            })
-          }
-        }).catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form: " + error.message
-        });
-      }
-      form.addEventListener("submit", handleSubmit)
-      },
-  methods: {
-    updateRep (val) {
-      this.rep = val
-    }
-  }
+  name: 'SimplestAgentForm'
 }
 </script>
