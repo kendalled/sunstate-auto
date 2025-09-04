@@ -2,86 +2,114 @@
   <!--
   https://www.w3.org/TR/wai-aria-practices/#Listbox
   https://www.w3.org/TR/wai-aria-practices/examples/listbox/listbox-collapsible.html
+  
+  This component includes progressive enhancement:
+  - Native HTML select as fallback for JavaScript-disabled environments
+  - Enhanced custom dropdown when JavaScript is available
   -->
-  <div @keydown.up="moveHighlightUp" @keydown.down="moveHighlightDown" @keydown.enter="selectHighlighted" @keydown.escape="escapeHandler">
-    <label :id="('listbox-label-' + title)" :for="('select-button-' + title)" class="block text-sm font-medium leading-6 text-gray-900">
+  <div>
+    <label :id="('listbox-label-' + title)" :for="('select-fallback-' + title)" class="block text-sm font-medium leading-6 text-gray-900">
       {{ title }}
     </label>
-    <div v-click-outside="clickAway" class="relative mt-2">
-      <span class="inline-block w-full">
-        <button
-          :id="('select-button-' + title)"
-          type="button"
-          aria-haspopup="listbox"
-          :aria-expanded="expanded.toString()"
-          :aria-labelledby="('listbox-label-' + title) + (' listbox-item-' + title)"
-          class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6"
-          @click.prevent="toggleSelect"
-        >
-          <span class="block truncate">
-            {{ selected }}
-          </span>
-          <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
-            <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="none" stroke="currentColor">
-              <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </span>
-        </button>
-      </span>
+    
+    <!-- Fallback native select (always present, hidden when JS loads) -->
+    <select 
+      :id="('select-fallback-' + title)"
+      :name="title.toLowerCase().replace(/\s+/g, '-')"
+      :value="selected"
+      class="js-hidden block w-full mt-2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+      @change="handleFallbackChange"
+    >
+      <option v-for="option in options" :key="option" :value="option" :selected="option === selected">
+        {{ option }}
+      </option>
+    </select>
 
-      <transition
-        leave-active-class="transition duration-100 ease-in"
-        leave-from-class="opacity-100"
-        leave-to-class="opacity-0"
-      >
-        <!-- Select popover, show/hide based on select state. -->
-        <div v-show="expanded" class="absolute z-30 w-full mt-1 bg-white rounded-md shadow-lg">
-          <ul
-            :id="'options-box-' + title "
-            tabindex="-1"
-            role="listbox"
-            :aria-labelledby="('listbox-label-' + title)"
-            :aria-activedescendant="[expanded ? 'listbox-item-' + options[ind] : '']"
-            class="py-1 overflow-auto text-base leading-6 rounded-md ring-1 ring-black ring-opacity-5 max-h-60 focus:outline-none sm:text-sm sm:leading-5"
+    <!-- Enhanced custom dropdown (hidden by default, shown when JS loads) -->
+    <div 
+      v-show="jsEnabled"
+      @keydown.up="moveHighlightUp" 
+      @keydown.down="moveHighlightDown" 
+      @keydown.enter="selectHighlighted" 
+      @keydown.escape="escapeHandler"
+      class="js-enhanced"
+    >
+      <div v-click-outside="clickAway" class="relative mt-2">
+        <span class="inline-block w-full">
+          <button
+            :id="('select-button-' + title)"
+            type="button"
+            aria-haspopup="listbox"
+            :aria-expanded="expanded.toString()"
+            :aria-labelledby="('listbox-label-' + title) + (' listbox-item-' + title)"
+            class="relative w-full cursor-default rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:outline-none focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6"
+            @click.prevent="toggleSelect"
           >
-            <!--
-            Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-            Highlighted: "text-white bg-red-600", Not Highlighted: "text-gray-900"
-          -->
-            <li
-              v-for="(option, o) in options"
-              :id="'listbox-item-' + option"
-              :key="option"
-              :tabindex="o"
-              :class="highlighted === o ? 'text-white bg-red-600' : 'text-gray-900'"
-              role="option"
-              :aria-selected="selected === option"
-              class="relative py-2 pl-3 cursor-pointer select-none pr-9 focus:outline-none"
-              @mouseenter="highlightMe(o)"
-              @mouseleave="unHighlight"
-              @click="selectOption(option)"
+            <span class="block truncate">
+              {{ selected }}
+            </span>
+            <span class="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+              <svg class="w-5 h-5 text-gray-400" viewBox="0 0 20 20" fill="none" stroke="currentColor">
+                <path d="M7 7l3-3 3 3m0 6l-3 3-3-3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </button>
+        </span>
+
+        <transition
+          leave-active-class="transition duration-100 ease-in"
+          leave-from-class="opacity-100"
+          leave-to-class="opacity-0"
+        >
+          <!-- Select popover, show/hide based on select state. -->
+          <div v-show="expanded" class="absolute z-30 w-full mt-1 bg-white rounded-md shadow-lg">
+            <ul
+              :id="'options-box-' + title "
+              tabindex="-1"
+              role="listbox"
+              :aria-labelledby="('listbox-label-' + title)"
+              :aria-activedescendant="[expanded ? 'listbox-item-' + options[ind] : '']"
+              class="py-1 overflow-auto text-base leading-6 rounded-md ring-1 ring-black ring-opacity-5 max-h-60 focus:outline-none sm:text-sm sm:leading-5"
             >
-              <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
-              <span class="block antialiased truncate" :class="[selected === option ? 'font-semibold' : 'font-normal']">
-                {{ option }}
-              </span>
-
               <!--
-              Checkmark, only display for selected option.
-
-              Highlighted: "text-white", Not Highlighted: "text-red-600"
+              Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
+              Highlighted: "text-white bg-red-600", Not Highlighted: "text-gray-900"
             -->
-              <span v-if="selected === option" :class="[highlighted === o ? 'text-white' : 'text-red-600']" class="absolute inset-y-0 right-0 flex items-center pr-4">
-                <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                </svg>
-              </span>
-            </li>
+              <li
+                v-for="(option, o) in options"
+                :id="'listbox-item-' + option"
+                :key="option"
+                :tabindex="o"
+                :class="highlighted === o ? 'text-white bg-red-600' : 'text-gray-900'"
+                role="option"
+                :aria-selected="selected === option"
+                class="relative py-2 pl-3 cursor-pointer select-none pr-9 focus:outline-none"
+                @mouseenter="highlightMe(o)"
+                @mouseleave="unHighlight"
+                @click="selectOption(option)"
+              >
+                <!-- Selected: "font-semibold", Not Selected: "font-normal" -->
+                <span class="block antialiased truncate" :class="[selected === option ? 'font-semibold' : 'font-normal']">
+                  {{ option }}
+                </span>
 
-            <!-- More options... -->
-          </ul>
-        </div>
-      </transition>
+                <!--
+                Checkmark, only display for selected option.
+
+                Highlighted: "text-white", Not Highlighted: "text-red-600"
+              -->
+                <span v-if="selected === option" :class="[highlighted === o ? 'text-white' : 'text-red-600']" class="absolute inset-y-0 right-0 flex items-center pr-4">
+                  <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+              </li>
+
+              <!-- More options... -->
+            </ul>
+          </div>
+        </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -113,7 +141,16 @@ export default {
     return {
       highlighted: 0,
       expanded: false,
-      selected: this.options[4]
+      selected: this.options[4],
+      jsEnabled: false
+    }
+  },
+  mounted () {
+    // Enable JavaScript enhancements after mount
+    this.jsEnabled = true
+    // Add js-enabled class to document body for CSS targeting
+    if (process.client) {
+      document.body.classList.add('js-enabled')
     }
   },
   computed: {
@@ -207,7 +244,32 @@ export default {
       this.selected = option
       this.expanded = false
       document.getElementById('select-button-' + this.title).focus()
+    },
+    handleFallbackChange (event) {
+      // Handle native select change for fallback mode
+      this.selected = event.target.value
+      this.$emit('chosen', this.selected)
     }
   }
 }
 </script>
+
+<style>
+/* Progressive enhancement styles */
+.js-hidden {
+  display: block;
+}
+
+.js-enhanced {
+  display: none;
+}
+
+/* When JavaScript is enabled, reverse the display */
+.js-enabled .js-hidden {
+  display: none;
+}
+
+.js-enabled .js-enhanced {
+  display: block;
+}
+</style>
