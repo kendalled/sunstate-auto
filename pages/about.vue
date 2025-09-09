@@ -17,6 +17,8 @@
 
       <AboutTeam />
 
+      <FloridaServiceMap />
+
       <AboutBlog />
 
     </main>
