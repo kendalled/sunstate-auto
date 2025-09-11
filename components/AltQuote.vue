@@ -249,19 +249,19 @@
                 <!-- <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p> -->
                 <div class="mt-6 space-y-6">
                   <div class="flex items-center gap-x-3">
-                    <input id="body-twodoor" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="body-twodoor" name="body-type" value="2 Door" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="body-twodoor" class="block text-sm font-medium leading-6 text-gray-900">2 Door</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="body-fourdoor" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="body-fourdoor" name="body-type" value="4 Door" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="body-fourdoor" class="block text-sm font-medium leading-6 text-gray-900">4 Door</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="body-wagon" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="body-wagon" name="body-type" value="Wagon" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="body-wagon" class="block text-sm font-medium leading-6 text-gray-900">Wagon</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="body-other" name="body-type" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="body-other" name="body-type" value="Other" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="body-other" class="block text-sm font-medium leading-6 text-gray-900">Other</label>
                   </div>
                 </div>
@@ -272,19 +272,19 @@
                 <!-- <p class="mt-1 text-sm leading-6 text-gray-600">These are delivered via SMS to your mobile phone.</p> -->
                 <div class="mt-6 space-y-6">
                   <div class="flex items-center gap-x-3">
-                    <input id="glass-windshield" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="glass-windshield" name="glass-replaced" value="Windshield" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="glass-windshield" class="block text-sm font-medium leading-6 text-gray-900">Windshield</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="glass-back" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="glass-back" name="glass-replaced" value="Back Glass" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="glass-back" class="block text-sm font-medium leading-6 text-gray-900">Back Glass</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="glass-door" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="glass-door" name="glass-replaced" value="Door Glass" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="glass-door" class="block text-sm font-medium leading-6 text-gray-900">Door Glass</label>
                   </div>
                   <div class="flex items-center gap-x-3">
-                    <input id="glass-other" name="glass-replaced" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="glass-other" name="glass-replaced" value="Other" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="glass-other" class="block text-sm font-medium leading-6 text-gray-900">Other</label>
                   </div>
                 </div>
