@@ -349,11 +349,11 @@
                 <legend class="sr-only">Spanish Speaking Customer</legend>
                 <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                   <div class="flex items-center">
-                    <input id="spanish" name="spanish-speaking" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="spanish" name="spanish-speaking" value="Yes" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="spanish" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
                   </div>
                   <div class="flex items-center">
-                    <input id="english" name="spanish-speaking" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="english" name="spanish-speaking" value="No" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="english" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
                   </div>
                 </div>
@@ -374,11 +374,11 @@
                 <legend class="sr-only">Confirmation Email</legend>
                 <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
                   <div class="flex items-center">
-                    <input id="yes" name="confirmation-email" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="yes" name="confirmation-email" value="Yes" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="yes" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
                   </div>
                   <div class="flex items-center">
-                    <input id="no" name="confirmation-email" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                    <input id="no" name="confirmation-email" value="No" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
                     <label for="no" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
                   </div>
                 </div>
