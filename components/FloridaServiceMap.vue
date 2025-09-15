@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-24 sm:py-32">
+  <div class="bg-white pt-24 pb-0 sm:pt-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <!-- Header Section -->
       <div class="mx-auto max-w-2xl text-center">
@@ -15,7 +15,7 @@
       <div class="mt-16 sm:mt-20">
         <div ref="overlayContainer" class="relative mx-auto max-w-5xl">
           <!-- Map Container -->
-          <div ref="mapWrapper" class="relative overflow-hidden rounded-3xl bg-gray-50 border border-gray-200 shadow-md">
+          <div ref="mapWrapper" class="relative overflow-hidden rounded-3xl bg-gray-100 border border-gray-200 shadow-md">
             <!-- Light layered card accents -->
             <div class="pointer-events-none absolute -inset-px rounded-3xl ring-1 ring-gray-200"></div>
             <div class="pointer-events-none absolute inset-3 rounded-2xl border border-gray-200/70"></div>
@@ -85,19 +85,29 @@
           </div>
         </div>
 
-        <!-- Service Counties List -->
+        <!-- Service Counties List (card-in-card, responsive, no truncation) -->
         <div class="mt-16">
-          <div class="mx-auto max-w-2xl text-center">
-            <h3 class="text-xl font-semibold text-gray-900 mb-8">
-              Counties We Serve
-            </h3>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
-              <div 
-                v-for="county in serviceCounties" 
-                :key="county"
-                class="bg-red-50 rounded-lg px-5 py-2 text-sm font-medium text-red-800 border border-red-200 whitespace-nowrap"
-              >
-                {{ formatCountyName(county) }}
+          <div class="mx-auto max-w-5xl">
+            <div class="relative overflow-hidden rounded-2xl bg-gray-50 border border-gray-200 shadow">
+              <div class="pointer-events-none absolute -inset-px rounded-2xl ring-1 ring-gray-200"></div>
+              <div class="p-6 sm:p-8">
+                <h3 class="text-xl font-semibold text-gray-900 mb-6 sm:mb-8 text-center">
+                  Counties We Serve
+                </h3>
+                <div class="grid gap-3 sm:gap-4 [grid-template-columns:repeat(auto-fit,minmax(160px,1fr))]">
+                  <div
+                    v-for="county in serviceCounties"
+                    :key="county"
+                    class="relative rounded-xl bg-red-500/10 border border-red-400/30 shadow-sm backdrop-blur-sm"
+                  >
+                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-white/20"></div>
+                    <div class="px-3 py-2 sm:px-4 sm:py-2.5">
+                      <p class="text-sm font-medium text-red-800 text-center leading-snug break-words drop-shadow-[0_1px_0_rgba(255,255,255,0.4)]">
+                        {{ formatCountyName(county) }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
