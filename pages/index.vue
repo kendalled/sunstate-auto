@@ -2,7 +2,69 @@
   <main>
     <Head>
       <Title>SunState Auto Glass | Orlando Windshield Replacement & Repair</Title>
-      <Meta name="description" content="Trust SunState Auto Glass for over 17 years of expert windshield replacement and auto glass repair in Orlando and Tampa. We offer fast, reliable service with free mobile repairs, ensuring you get back on the road safely. Contact us today for top-rated service!" />
+      <Meta name="description" content="Orlando windshield replacement and auto glass repair experts since 2007. SunState Auto Glass offers mobile windshield replacement near me with same-day service in Orlando and Tampa. Free insurance claims and professional auto glass repair." />
+      <Script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "SunState Auto Glass",
+          "image": "https://sunstateautoglass.com/logo.png",
+          "description": "Professional windshield replacement and auto glass repair services in Orlando and Tampa, Florida",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "6566 University Blvd",
+            "addressLocality": "Winter Park",
+            "addressRegion": "FL",
+            "postalCode": "32792",
+            "addressCountry": "US"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "28.5989",
+            "longitude": "-81.3486"
+          },
+          "telephone": "+14072652855",
+          "email": "info@sunstateautoglass.com",
+          "url": "https://sunstateautoglass.com",
+          "sameAs": [],
+          "openingHours": "Mo-Fr 08:00-18:00",
+          "priceRange": "$$",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Orlando",
+              "addressRegion": "FL"
+            },
+            {
+              "@type": "City",
+              "name": "Tampa",
+              "addressRegion": "FL"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Auto Glass Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Windshield Replacement",
+                  "description": "Professional windshield replacement services for all vehicle types"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Auto Glass Repair",
+                  "description": "Expert auto glass repair for chips, cracks, and damaged windows"
+                }
+              }
+            ]
+          }
+        }
+      </Script>
     </Head>
     <PictureHero />
 		<TimelineFeat />
