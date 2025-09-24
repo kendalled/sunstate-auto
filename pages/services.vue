@@ -1,4 +1,9 @@
 <template>
+  <Head>
+    <Title>Auto Glass Services Orlando | Windshield Replacement & Repair | SunState Auto Glass</Title>
+    <Meta name="description" content="Complete windshield replacement and auto glass repair services in Orlando and Tampa. SunState Auto Glass offers mobile windshield replacement near me, side window repair, and commercial vehicle glass services with same-day service." />
+    <Meta name="keywords" content="windshield replacement orlando, auto glass repair orlando, windshield replacement near me, mobile windshield replacement, auto glass services orlando" />
+  </Head>
   <div>
     <PictureHeader heading="Our Services" copy="Where precision meets vision. From flawlessly executed windshield replacements to chip and crack repairs, seamless side window replacements, and tailored solutions for commercial vehicles, we redefine clarity on the road." image="/smashed.png" />
     <ImageRight id="replacement" :flavor="block1.flavor" :heading="block1.heading" :subheading="block1.subheading" :image="block1.image" :points="block1.points" />
@@ -17,7 +22,7 @@
       return {
         block1: {
           flavor: 'Get back on the road easily',
-          heading: 'Windshield Replacements',
+          heading: 'Orlando Windshield Replacement Services',
           subheading: 'Driving with a cracked or smashed windshield is not only illegal in Florida, but is free to fix with your insurance. Don\'t let a little crack become a big problem.',
           image: '/hondacropped.png',
           imgAlt: 'Honda windshield getting replaced',
