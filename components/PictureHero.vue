@@ -9,7 +9,7 @@
         <!-- PNG format source (fallback for browsers that don't support WebP) -->
         <source srcset="/cracked-optim.png" type="image/png">
         <!-- Image element with fallback -->
-        <img src="/cracked-optim.png" alt="Cracked Windshield" class="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
+        <img src="/cracked-optim.png" alt="Orlando windshield replacement service - cracked windshield before repair" class="absolute inset-0 -z-10 h-full w-full object-cover mix-blend-multiply">
       </picture>
       <div class="absolute inset-0 -z-10 h-full w-full object-cover bg-gray-900 opacity-85 mix-blend-multiply" />
       <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -18,13 +18,13 @@
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56 px-6 sm:px-0">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
           <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-            No cost windshield replacement with insurance. <nuxt-link to="/services" title="Overview of services" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Learn more <span aria-hidden="true">&rarr;</span></nuxt-link>
+            No cost windshield replacement with insurance. <nuxt-link to="/services" title="Overview of services" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>View Our Services <span aria-hidden="true">&rarr;</span></nuxt-link>
           </div>
         </div>
         <!-- og was no -mt-4 and no mt-2 -->
         <div class="text-center -mt-4">
           <span class="text-2xl font-bold tracking-tight text-gray-100/90 sm:text-3xl">Orlando - Tampa</span>
-          <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Windshield repair has never been easier.</h1>
+          <h1 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Orlando Windshield Replacement & Repair Made Easy</h1>
           <p class="mt-6 text-lg leading-8 text-gray-300">Get seamless windshield repair & replacement with SunState AutoGlass. Our swift, same-day service ensures your auto glass is restored properly. Trust us for a hassle-free solution to get you back on the road with a clear view.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <!-- <nuxt-link to="/agent" class="rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-400">Online Submission</nuxt-link> -->
@@ -34,7 +34,7 @@
                 <path clip-rule="evenodd" fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm4.28 10.28a.75.75 0 0 0 0-1.06l-3-3a.75.75 0 1 0-1.06 1.06l1.72 1.72H8.25a.75.75 0 0 0 0 1.5h5.69l-1.72 1.72a.75.75 0 1 0 1.06 1.06l3-3Z"></path>
               </svg>
             </nuxt-link>
-            <nuxt-link to="/services" title="Overview of services" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></nuxt-link>
+            <nuxt-link to="/services" title="Overview of services" class="text-sm font-semibold leading-6 text-white">View Our Services <span aria-hidden="true">→</span></nuxt-link>
           </div>
         </div>
       </div>

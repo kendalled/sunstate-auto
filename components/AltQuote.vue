@@ -368,22 +368,19 @@
                 <p class="mt-3 text-sm leading-6 text-gray-600">Note any additional comments here.</p>
               </div>
   
-            <div class="col-span-3 sm:col-span-full">
+            <fieldset class="col-span-3 sm:col-span-full">
               <legend class="text-sm font-medium text-gray-900">Confirmation Email?</legend>
-              <fieldset class="mt-2">
-                <legend class="sr-only">Confirmation Email</legend>
-                <div class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
-                  <div class="flex items-center">
-                    <input id="yes" name="confirmation-email" value="Yes" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
-                    <label for="yes" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
-                  </div>
-                  <div class="flex items-center">
-                    <input id="no" name="confirmation-email" value="No" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
-                    <label for="no" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
-                  </div>
+              <div class="mt-2 space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0">
+                <div class="flex items-center">
+                  <input id="yes" name="confirmation-email" value="Yes" type="radio" checked class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <label for="yes" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Yes</label>
                 </div>
-              </fieldset>
-            </div>
+                <div class="flex items-center">
+                  <input id="no" name="confirmation-email" value="No" type="radio" class="h-4 w-4 border-gray-300 text-red-600 focus:ring-red-600">
+                  <label for="no" class="ml-3 block text-sm font-medium leading-6 text-gray-900">No</label>
+                </div>
+              </div>
+            </fieldset>
   
             </div>
           </div>
